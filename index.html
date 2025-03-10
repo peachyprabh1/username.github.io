@@ -50,17 +50,17 @@
 <body>
     <div class="container">
         <h1>Welcome!</h1>
-        <p>Enter the password to proceed:</p>
+        <p>Enter the password to proceed (lowercase and spcae included):</p>
         <input type="password" id="password" placeholder="Enter password">
         <button onclick="checkPassword()">Submit</button>
-        <div class="hint">Hint: Think of your favorite color.</div>
+        <div class="hint">Hint: The embarrassing name you've given me.</div>
         <p id="error" style="color: red; display: none;">Incorrect password. Try again.</p>
     </div>
 
     <script>
         function checkPassword() {
             const password = document.getElementById('password').value;
-            const correctPassword = "red"; // Set your custom password here
+            const correctPassword = "masala prabhjot"; // Set your custom password here
             const errorMessage = document.getElementById('error');
 
             if (password === correctPassword) {
